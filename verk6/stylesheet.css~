@@ -1,0 +1,114 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+    text-decoration: none;
+}
+a {
+	color: black;
+}
+.haus {
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 0.5fr;
+	grid-template-columns: 0.5fr 1fr 1fr 0.3fr;
+	border-bottom: 1px solid lightgray;
+}
+.haus h1 {
+	grid-column-start: 2;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+
+	font-weight: normal;
+	font-size: 3em;
+	text-decoration: underline;
+	text-decoration-color: red;
+
+}
+.efni {
+	margin-right: 1em;
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	text-align: center;
+}
+.efni ul {
+	list-style: none;
+}
+.efni ul li {
+	border-bottom: 1px solid lightgray;
+}
+.efni ul li:hover {
+	background-color: #e9e9e9;
+	cursor: pointer;
+	color: white;
+}
+.efni ul li a:hover {
+	background-color: #e9e9e9;
+	color: white;
+}
+.adal {
+	background: linear-gradient(to right, #e9e9e9, white);
+	display: grid;
+	grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	border-bottom: 1px solid lightgray;
+}
+.adal .huginn {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	text-align: justify;
+}
+.adal .huginn .mynd  img{
+	grid-column-start: 1;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	border: 1px solid red;
+
+}
+.adal .huginn h1 {
+	text-align: center;
+	margin-bottom: 2em;
+	text-decoration: underline;
+	text-decoration-color: red;
+	font-weight: normal;
+	font-size: 2em;
+}
+.adal .ahugamal {
+	grid-column-start: 2;
+	grid-column-end: 5;
+	grid-row-start: 5;
+	grid-row-end: 8;
+	text-align: justify;
+}
+.adal .ahugamal h1 {
+	text-align: center;
+	margin-bottom: 2em;
+	text-decoration: underline;
+	text-decoration-color: red;
+	font-weight: normal;
+	font-size: 2em;
+}
+.toptakki {
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	font-size: 2em;
+	text-decoration: none;
+	color: black;
+	background-color: #e9e9e9;
+	border-radius: 0.5em;
+	padding: 0.25em;
+}
+.toptakki:hover {
+	background-color: lightgray;
+	color: white;
+}
