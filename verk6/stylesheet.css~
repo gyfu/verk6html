@@ -13,20 +13,14 @@ a {
 }
 .haus {
 	display: grid;
-	grid-template-rows: 1fr 1fr 1fr 0.5fr;
+	grid-template-rows: 1fr 1fr 0.5fr;
 	grid-template-columns: 0.5fr 1fr 1fr 0.3fr;
 	border-bottom: 1px solid lightgray;
 }
-.haus h1 {
+.haus img {
 	grid-column-start: 2;
 	grid-column-end: 4;
 	grid-row-start: 2;
-	grid-row-end: 3;
-
-	font-weight: normal;
-	font-size: 3em;
-	text-decoration: underline;
-	text-decoration-color: red;
 
 }
 .efni {
@@ -55,7 +49,7 @@ a {
 .adal {
 	background: linear-gradient(to right, #e9e9e9, white);
 	display: grid;
-	grid-template-rows: 0.5fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+	grid-template-rows: 0.1fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 	border-bottom: 1px solid lightgray;
 }
@@ -64,15 +58,16 @@ a {
 	grid-column-end: 5;
 	grid-row-start: 2;
 	grid-row-end: 3;
-	text-align: justify;
+	display: grid;
+	grid-template-rows: 0.1fr 0.2fr 2fr;
+	grid-template-columns: 1fr;
+	text-align: center;
 }
-.adal .huginn .mynd  img{
+.adal .huginn .mynd {
 	grid-column-start: 1;
-	grid-column-end: 5;
-	grid-row-start: 2;
-	grid-row-end: 3;
-	border: 1px solid red;
-
+	grid-column-end: 2;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 .adal .huginn h1 {
 	text-align: center;
@@ -85,17 +80,52 @@ a {
 .adal .ahugamal {
 	grid-column-start: 2;
 	grid-column-end: 5;
-	grid-row-start: 5;
-	grid-row-end: 8;
+	grid-row-start: 3;
+	grid-row-end: 4;
+	display: grid;
+	grid-template-rows: 0.05fr 0.07fr 0.1fr 0.1fr;
+	grid-template-columns: 1fr 1fr 1fr;
 	text-align: justify;
+	margin-bottom: 1em;
+}
+.adal .ahugamal audio {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	margin-left: 25%;
+}
+.adal .ahugamal h3 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 4;
+	grid-row-end: 5;
+	text-align: center;
+	margin-top: 10em;
 }
 .adal .ahugamal h1 {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 1;
+	grid-row-end: 2;
 	text-align: center;
 	margin-bottom: 2em;
 	text-decoration: underline;
 	text-decoration-color: red;
 	font-weight: normal;
 	font-size: 2em;
+}
+.adal .ahugamal p {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 3;
+}
+.adal .ahugamal iframe {
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 3;
+	grid-row-end: 4;
 }
 .toptakki {
 	position: fixed;
